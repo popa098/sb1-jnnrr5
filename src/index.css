@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    @apply bg-white rounded-full px-6 py-3;
+    @apply border border-gray-300 focus:border-purple-light focus:outline-none focus:ring-0;
+    @apply text-main placeholder-dop;
+    @apply relative;
+  }
+  
+  body {
+    @apply bg-background text-main;
+  }
+}
